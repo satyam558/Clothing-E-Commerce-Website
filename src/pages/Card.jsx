@@ -5,29 +5,31 @@ const Card =()=>{
     return(
         <>
            <div className="container-fluid py-5 bg-light">
-             <div className="row">
+            <h1 className="text-center text-capitalize">about us</h1>
+             <div className="row py-5">
                 {
                     data.map((ele)=>{
                         return(
-                            <>
                               <div className="col-lg-3">
                                 <CardUi tit = {ele.title} des={ele.desc} />
                               </div>
-                            </>
                         )
                     })
                 }
                 </div>
                 <div className="container">
-                    <div className="row g-3 py-5 d-flex justify-content-between" >
-                        <div className="col-lg-4">
-                            <img src="https://picsum.photos/2000/300" width={500} height={300} alt="" />
+                    <div className="d-flex justify-content-lg-evenly fs-5 text-secondary text-uppercase flex-wrap lh-lg" >
+                        <div className="col-lg-4 ">
+                            <img src="https://picsum.photos/100/300"   width={400} height={300} alt="" />
+                            <p>shop for men</p>
                         </div>
-                        <div className="col-lg-4">
-                            <img src="https://picsum.photos/3000/300" width={500} height={300} alt="" />
+                        <div className="col-lg-4 ">
+                            <img src="https://picsum.photos/200/300"  width={400} height={300} alt="" />
+                            <p>shop for men</p>
                         </div>
-                        <div className="col-lg-4">
-                            <img src="https://picsum.photos/4000/300" width={500} height={300} alt="" />
+                        <div className="col-lg-4 ">
+                            <img src="https://picsum.photos/300/300"  width={400} height={300} alt="" />
+                            <p>shop for men</p>
                         </div>
                     </div>
                 </div>
